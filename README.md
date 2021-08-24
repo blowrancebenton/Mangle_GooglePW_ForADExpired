@@ -12,10 +12,11 @@
 Restricts Staff/Student access to Google accounts when AD account is expired by randomizing the account password in Google using GAM.
 
 **Requirements:**
-1. GAM ( https://github.com/jay0lee/GAM ) must be installed and working
-2. The user account executing the script must have access to read the AD attributes: Enabled, Mail, PasswordNeverExpires, PasswordExpired, ExtensionAttribute2
-3. The user account executing the script must have access to write the AD attribute: ExtensionAttribute2
-4. The user account executing the script must be able to read/write to the log file mentioned in the instructions below
+1. You must be using Google Password Sync ( https://support.google.com/a/answer/2611859?hl=en )
+2. GAM ( https://github.com/jay0lee/GAM ) must be installed and working
+3. The user account executing the script must have access to read the AD attributes: Enabled, Mail, PasswordNeverExpires, PasswordExpired, ExtensionAttribute2
+4. The user account executing the script must have access to write the AD attribute: ExtensionAttribute2
+5. The user account executing the script must be able to read/write to the log file mentioned in the instructions below
 
 **Basic instructions:**
 1. Install GAM and ensure that it is working ("gam info domain" should give basic information regarding your domain).
