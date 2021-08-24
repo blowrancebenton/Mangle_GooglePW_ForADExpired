@@ -23,3 +23,6 @@ Restricts Staff/Student access to Google accounts when AD account is expired by 
 2. Download Mangle_GooglePW_ForADExpired.ps1
 3. Edit the configuration section of Mangle_GooglePW_ForADExpired.ps1
 4. Execute on your desired schedule
+
+**Side Effect:**
+1. When an affected user attempts to login to Google with their now expired password (after the script runs), they will receive an error telling them that their "password changed x hours ago".  This will be when the script randomized their Google password.
